@@ -1,15 +1,18 @@
-name: CI
+name: Manual workflow
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+    branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        default: 'World'
+        required: true
+        type: string
 
 jobs:
-  build:
+  run_load_data:
     runs-on: ubuntu-latest
 
     steps:
