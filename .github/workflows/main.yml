@@ -23,7 +23,7 @@ jobs:
       - name: Run load_data.py
         run: python src/load_data.py
 
-test_load_data:
+  test_load_data:
     runs-on: ubuntu-latest
 
     steps:
