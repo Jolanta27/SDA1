@@ -27,4 +27,4 @@ jobs:
         pip install pandas scikit-learn
 
     - name: Run load_data.py
-      run: python load_data.py
+      run: python src/load_data.py
